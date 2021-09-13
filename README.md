@@ -1,3 +1,3 @@
 # Trade4Trade 
-A bilateral trading platform
+*A bilateral trading platform*
 

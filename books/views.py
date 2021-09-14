@@ -17,9 +17,10 @@ def addBooks(request):
             details.save()
 
             return render(request, 'add_books.html', {})
+
     else:
         return render(request, 'add_books.html', {})
 
 def viewBooks(request):
-    obj = Book.objects.get(id=43)
+    obj = Book.objects.get(id=66)
     return render(request, 'homepage.html', {'details': obj})

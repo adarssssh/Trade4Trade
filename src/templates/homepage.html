@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<img src="media/{{ details.img }}">
+<br><br>
+{{details.title}}
+{{details.price}}
+{{details.tags}}
+{{details.category}}
+{{details.discription}}
+
+<br><br><br><br>
+{{details.img}}
+
+
+<br><br><br>
+
+<a href="add_books"><button type="button">Add Book</button></a>
+
+{% endblock %}

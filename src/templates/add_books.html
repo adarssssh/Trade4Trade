@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <h1>Books 4 Books</h1>
+
+    <form enctype="multipart/form-data" method="POST">
+        {% csrf_token %}
+
+        <input type="text" name="title" class="form-control" placeholder="Title">
+        <input type="text" name="category" class="form-control" placeholder="Category">
+        <input type="text" name="tags" class="form-control" placeholder="Tags">
+        <input type="text" name='discription' class="form-control" placeholder="description">
+        <input type="number" name='price' class="form-control" placeholder="Price">
+        <input type="file" name='img' class="form-control">
+        <input type="submit" class="btn btn-primary" value="Add">
+    
+    </form>
+    
+    <a href="home"><button type="button">Home</button></a>
+
+{% endblock %}
